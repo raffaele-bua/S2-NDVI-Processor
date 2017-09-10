@@ -1,1 +1,1 @@
-docker run -v $(pwd)/usr:/usr/project -it proc /bin/bash
+docker run -v $(pwd)/usr:/usr/project  proc createfile

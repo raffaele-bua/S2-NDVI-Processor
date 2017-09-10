@@ -49,4 +49,9 @@ RUN apt-get install -y valgrind
 RUN apt-get install -y vim
 
 
-WORKDIR /usr/project/
+# copy makefile
+COPY Makefile /usr/
+
+# set entry point
+WORKDIR /usr/
+ENTRYPOINT [ "make" ]
